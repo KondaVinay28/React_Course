@@ -1,8 +1,11 @@
-import Title from "./Title.jsx";
+import Product from "./Product";
 function ProductTab() {
   return (
     <>
-      <Title />
+      <Product />
+      <Product title="0" description="0" />
+      <Product title="1" description="1" />
+      <Product title="2" description="2" />
     </>
   );
 }
