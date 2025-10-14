@@ -1,9 +1,9 @@
 import "./Product.css";
 function Product({ title }) {
-  let color = { color: "orange" };
+  let colors = { color: title == "Hello, Vinay" ? "yellow" : "red" };
   return (
     <div className="Product">
-      <h4 style={color}>{title} </h4>
+      <h4 style={colors}>{title}</h4>
     </div>
   );
 }
