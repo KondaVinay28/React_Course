@@ -1,12 +1,13 @@
 import Product from "./Product";
 function ProductTab() {
+  // let options = ["hi-tech", "durable", "fast"];
+  // let options2 = { a: "hi-tech", b: "durable", c: "fast" };
   return (
-    <>
-      <Product />
-      <Product title="0" description="0" />
-      <Product title="1" description="1" />
-      <Product title="2" description="2" />
-    </>
+    <div>
+      <Product title="Hello, Vinay" />
+      <Product title="Hello, Akhil" />
+      <Product title="Hello, Sohel" />
+    </div>
   );
 }
 
