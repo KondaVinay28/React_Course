@@ -1,10 +1,12 @@
 import "./App.css";
-import ProductTab from "./ProductTab";
+import CardTab from "./CardTab";
+// import ProductTab from "./ProductTab";
 
 function App() {
   return (
     <>
-      <ProductTab />
+      {/* <ProductTab /> */}
+      <CardTab className="CardTab" />
     </>
   );
 }

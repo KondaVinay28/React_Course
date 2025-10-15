@@ -1,0 +1,16 @@
+.CardTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Card {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.oldPrice {
+  text-decoration: line-through;
+}
