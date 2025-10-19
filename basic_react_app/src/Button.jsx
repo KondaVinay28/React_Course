@@ -1,10 +1,10 @@
-function doSomething() {
+function handleClick() {
   console.log("Button Clicked!!");
 }
 export default function Button() {
   return (
     <div>
-      <button onClick={doSomething}> ! click Me !</button>
+      <button onClick={handleClick}> ! click Me !</button>
     </div>
   );
 }
