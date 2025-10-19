@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./Button";
 import CardTab from "./CardTab";
 // import ProductTab from "./ProductTab";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       {/* <ProductTab /> */}
       <CardTab className="CardTab" />
+      <Button />
     </>
   );
 }
