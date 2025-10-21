@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "./Button";
 import ButtonHover from "./ButtonHover";
 import CardTab from "./CardTab";
+import Form from "./Form";
 // import ProductTab from "./ProductTab";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <CardTab className="CardTab" />
       <Button />
       <ButtonHover />
+      <Form />
     </>
   );
 }
