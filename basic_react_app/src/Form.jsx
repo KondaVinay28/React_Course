@@ -1,4 +1,3 @@
-import React from "react";
 function handleFormSubmit(event) {
   event.preventDefault(); //Prevents default behaviour of the form
   console.log(event);
