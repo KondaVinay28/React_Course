@@ -1,10 +1,13 @@
 import { useState } from "react";
 const LikeButton = () => {
   let [isLiked, setIsLiked] = useState(false);
-  let toggleLike = () => {
+  /* console.log(isLiked); //false */
+
+  const toggleLike = () => {
     setIsLiked(!isLiked);
+    /* console.log(!isLiked); //false, when clicked true */
   };
-  let likeStyle = { color: "red" };
+  let likeStyle = { color: "red", cursor: "pointer" };
   return (
     <div>
       <p onClick={toggleLike}>

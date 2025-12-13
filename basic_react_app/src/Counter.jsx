@@ -9,13 +9,13 @@ import { useState } from "react";
 function Counter() {
   const [count, setCount] = useState(0);
   /* console.log("Re-rendered"); */
-  /* console.log(`count is ${count}`); */
+  /* console.log(`count is ${count}`);  -- shows exact value as we click */
 
   /* hooks should be defined inside a functional component */
 
   function handleClick() {
     setCount(count + 1);
-    /* console.log(`New value of count is ${count}`); */
+    /* console.log(`New value of count is ${count}`); -- output will be less than the ui value */
   }
   /* const handleClick = () => {
     setCount(count + 1);

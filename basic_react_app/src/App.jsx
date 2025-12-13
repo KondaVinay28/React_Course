@@ -5,6 +5,7 @@ import CardTab from "./CardTab";
 import Counter from "./Counter";
 import Form from "./Form";
 import LikeButton from "./LikeButton";
+import LudoBoard from "./LudoBoard";
 // import ProductTab from "./ProductTab";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Form />
       <Counter />
       <LikeButton />
+      <LudoBoard />
     </>
   );
 }
