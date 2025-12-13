@@ -1,17 +1,21 @@
 import { useState } from "react";
 const LudoBoard = () => {
   let [moves, setMoves] = useState({ Blue: 0, Yellow: 0, Green: 0, Red: 0 });
+  let [arr, setArr] = useState(["no moves"]);
 
-  /* let [blue, setBlue] = useState(Blue);
-     let [yellow, setYellow] = useState(Yellow);
-     let [green, setGreen] = useState(Green);
-     let [red, setRed] = useState(Red); */
+  /* let [blue, setBlue] = useState(0);
+     let [yellow, setYellow] = useState(0);
+     let [green, setGreen] = useState(0);
+     let [red, setRed] = useState(0); */
 
   const handleBlue = () => {
-    moves.Blue = moves.Blue + 1;
+    // moves.Blue = moves.Blue + 1;
     /* console.log(moves.Blue);
     setMoves(moves); */
-    setMoves({ ...moves });
+    // setMoves({ ...moves });
+    // arr.push("Blue moved successfully!!");
+    setArr([...arr, "Blue moved successfully!!"]);
+    console.log(arr);
   };
   const handleYellow = () => {
     moves.Yellow = moves.Yellow + 1;
@@ -29,6 +33,7 @@ const LudoBoard = () => {
     <div>
       <p>Game begins</p>
       <div className="board">
+        <p>{arr}</p>
         <p>Blue moves : {moves.Blue} </p>
         <button style={{ backgroundColor: "blue" }} onClick={handleBlue}>
           +1
