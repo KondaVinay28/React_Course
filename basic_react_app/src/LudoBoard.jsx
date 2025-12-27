@@ -1,7 +1,7 @@
 import { useState } from "react";
 const LudoBoard = () => {
-  let [moves, setMoves] = useState({ Blue: 0, Yellow: 0, Green: 0, Red: 0 });
-  let [arr, setArr] = useState(["no moves"]);
+  let [moves, setMoves] = useState({ Blue: 0, Yellow: 0, Green: 0, Red: 0 }); // Objects and state
+  let [arr, setArr] = useState(["no moves"]); // Arrays and state
 
   /* let [blue, setBlue] = useState(0);
      let [yellow, setYellow] = useState(0);
@@ -29,6 +29,7 @@ const LudoBoard = () => {
     moves.Red = moves.Red + 1;
     setMoves({ ...moves });
   };
+  /* spread operator used to update the UI with state variable */
   return (
     <div>
       <p>Game begins</p>
