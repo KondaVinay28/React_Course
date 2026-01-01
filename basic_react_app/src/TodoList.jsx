@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid"; //adds unique id to every list item
 
 const TodoList = () => {
-  let [todos, setTodos] = useState(["sample list"]);
+  let [todos, setTodos] = useState([{ task: "sample data", id: uuidv4() }]);
   let [newTodo, setNewTodo] = useState("");
 
   let handleAdd = () => {
     /* Push input values to the list */
-    setTodos([...todos, newTodo]);
-    setNewTodo("");
+    setTodos([...todos, { task: newTodo, id: uuidv4() }]);
+    setNewTodo(""); // clears the input field after the query
   };
 
   let handleChange = (event) => {
@@ -30,7 +31,7 @@ const TodoList = () => {
       <h4>Tasks todo</h4>
       <ul>
         {todos.map((todo) => (
-          <li>{todo}</li>
+          <li key={todo.id}>{todo.task}</li>
         ))}
       </ul>
     </div>
